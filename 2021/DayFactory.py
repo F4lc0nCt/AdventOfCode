@@ -1,5 +1,6 @@
 
 from Day1 import Day1
+from Day2 import Day2
 
 
 class DayFactory:
@@ -16,6 +17,8 @@ class DayFactory:
         print(f'Working on day {day_value}')
         if day_value == 1:
             return Day1()
+        elif day_value == 2:
+            return Day2()
         else:
             raise Exception("Unknown day value: "+ day_value)
 
