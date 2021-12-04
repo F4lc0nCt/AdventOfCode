@@ -1,12 +1,12 @@
 
 from DayFactory import DayFactory
 
-NB_DAY = 2
-LAST_DAY = False
+NB_DAY = 3
+LAST_DAY = True
 SECOND_STAR = True
 
 
-dayFactory = DayFactory(2)
+dayFactory = DayFactory(NB_DAY)
 if LAST_DAY:
     day = dayFactory.get_day(NB_DAY)
     day.process_first_star()

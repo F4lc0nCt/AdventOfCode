@@ -21,7 +21,7 @@ class Day1(Day):
     def count_increment_2(depth):
         current_sliding = 0
         queue = []
-        for i in range(3):
+        for _ in range(3):
             queue.append(int(next(depth)))
             current_sliding += queue[-1]
         nb_increment = 0
