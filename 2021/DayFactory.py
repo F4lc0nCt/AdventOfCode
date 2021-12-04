@@ -2,6 +2,7 @@
 from Day1 import Day1
 from Day2 import Day2
 from Day3 import Day3
+from Day4 import Day4
 
 
 class DayFactory:
@@ -22,6 +23,8 @@ class DayFactory:
             return Day2()
         elif day_value == 3:
             return Day3()
+        elif day_value == 4:
+            return Day4()
         else:
             raise Exception("Unknown day value: "+ day_value)
 
