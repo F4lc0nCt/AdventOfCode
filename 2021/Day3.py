@@ -5,11 +5,6 @@ from Day import Day
 
 class Day3(Day):
 
-    class Direction(Enum):
-        FORWARD = "forward"
-        DOWN = "down"
-        UP = "up"
-
     def __init__(self):
         super().__init__(3)
         self.gamma = 0
