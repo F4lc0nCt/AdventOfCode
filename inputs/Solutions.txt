@@ -1,0 +1,32 @@
+Working on day 1
+Day 1 - 1st star - Result Test Case is 7
+Day 1 - 1st star - Result Input Case is 1722
+Working on day 1
+Day 1 - 2nd star - Result Test Case is 5
+Day 1 - 2nd star - Result Input Case is 1748
+Working on day 2
+Day 2 - 1st star - Result Test Case is 150
+Day 2 - 1st star - Result Input Case is 1959318
+Working on day 2
+Day 2 - 2nd star - Result Test Case is 900
+Day 2 - 2nd star - Result Input Case is 2035343802
+Working on day 3
+Day 3 - 1st star - Result Test Case is 198
+Day 3 - 1st star - Result Input Case is 3374136
+Working on day 3
+Day 3 - 2nd star - Result Test Case is 230
+Day 3 - 2nd star - Result Input Case is 4432698
+Working on day 4
+Day 4 - 1st star - Result Test Case is 4512
+Day 4 - 1st star - Result Input Case is 58412
+Working on day 4
+Day 4 - 2nd star - Result Test Case is 1924
+Day 4 - 2nd star - Result Input Case is 10030
+Working on day 5
+Day 5 - 1st star - Result Test Case is 5
+Day 5 - 1st star - Result Input Case is 7318
+Working on day 5
+Day 5 - 2nd star - Result Test Case is 12
+Day 5 - 2nd star - Result Input Case is 19939
+
+Process finished with exit code 0

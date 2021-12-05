@@ -16,6 +16,11 @@ class Day2(Day):
         self.y = 0
         self.aim = 0
 
+    class UnknownDirection(Exception):
+
+        def __init__(self, direction):
+            super().__init__("Unknown direction: " + direction)
+
     def process_direction(self, direction, value):
         if direction == Day2.Direction.FORWARD.value:
             self.x += value
@@ -24,9 +29,12 @@ class Day2(Day):
         elif direction == Day2.Direction.UP.value:
             self.y -= value
         else:
-            raise Exception("Unknown direction: " + direction)
+            raise Day2.UnknownDirection(direction)
 
     def get_position(self, order):
+        self.x = 0
+        self.y = 0
+        self.aim = 0
         for elt in order:
             split_order = elt.split(" ")
             direction = split_order[0]
@@ -43,9 +51,12 @@ class Day2(Day):
         elif direction == Day2.Direction.UP.value:
             self.aim -= value
         else:
-            raise Exception("Unknown direction: " + direction)
+            raise Day2.UnknownDirection(direction)
 
     def get_position_2(self, order):
+        self.x = 0
+        self.y = 0
+        self.aim = 0
         for elt in order:
             split_order = elt.split(" ")
             direction = split_order[0]

@@ -1,5 +1,4 @@
 
-from enum import Enum
 from Day import Day
 
 
@@ -12,13 +11,22 @@ class Day4(Day):
         self.dict_board = {}
         self.nb_not_none = 0
 
+    def append_dict_board(self, v, idx_board, x, y):
+        if v in self.dict_board:
+            self.dict_board[v].append((idx_board, x, y))
+        else:
+            self.dict_board[v] = [(idx_board, x, y)]
+
+    def build_draw(self, drawn_string):
+        for v in drawn_string.split(','):
+            self.drawn_data.append(int(v))
+
     def build_data(self, text_input):
         self.drawn_data = []
         self.boards = []
         self.dict_board = {}
         drawn_string = next(text_input)
-        for v in drawn_string.split(','):
-            self.drawn_data.append(int(v))
+        self.build_draw(drawn_string)
         idx_board = 0
         while next(text_input, None) is not None:
             bd = []
@@ -28,13 +36,11 @@ class Day4(Day):
                 line = next(text_input)
                 y = 0
                 for v in line.split(' '):
-                    if v != '':
-                        line_board.append((int(v),False))
-                        if int(v) in self.dict_board:
-                            self.dict_board[int(v)].append((idx_board, x, y))
-                        else:
-                            self.dict_board[int(v)] = [(idx_board, x, y)]
-                        y += 1
+                    if v == '':
+                        continue
+                    line_board.append((int(v), False))
+                    self.append_dict_board(int(v), idx_board, x, y)
+                    y += 1
                 x += 1
                 bd.append(line_board)
             self.boards.append(bd)

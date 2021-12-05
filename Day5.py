@@ -18,13 +18,14 @@ class Day5(Day):
     @staticmethod
     def comparator(x, y, x1, y1, x2, y2):
         if x1 < x2 and y1 < y2:
-            return x <= x2 and y <= y2
+            res = x <= x2 and y <= y2
         elif x1 < x2 and y2 < y1:
-            return x <= x2 and y >= y2
+            res = x <= x2 and y >= y2
         elif x2 < x1 and y1 < y2:
-            return x >= x2 and y <= y2
+            res = x >= x2 and y <= y2
         else:
-            return x >= x2 and y >= y2
+            res = x >= x2 and y >= y2
+        return res
 
     @staticmethod
     def increment(x, y, x1, y1, x2, y2):

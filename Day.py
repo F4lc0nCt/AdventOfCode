@@ -20,6 +20,11 @@ class Day(ABC):
             else:
                 return "2nd"
 
+    class UnknownStarException(Exception):
+
+        def __init__(self, star):
+            super().__init__("Unknown Star: " + star)
+
     def __init__(self, day_value):
         self.day_value = day_value
 
@@ -43,7 +48,7 @@ class Day(ABC):
         elif star == Day.Star.SECOND:
             return self.solution_second_star(input_value)
         else:
-            raise Exception("Unknown Star: " + star)
+            raise Day.UnknownStarException(star)
 
     def process_star(self, star):
         test_case = InputParser(self.day_value, Day.TestEnum.TEST.value).get_iterator()

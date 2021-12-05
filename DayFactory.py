@@ -1,33 +1,25 @@
 
-from Day1 import Day1
-from Day2 import Day2
-from Day3 import Day3
-from Day4 import Day4
-from Day5 import Day5
+import importlib
 
 
 class DayFactory:
 
+    class DayChallengeException(Exception):
+
+        def __init__(self, day_value, max_day):
+            message = f'Problem not posted yet. ' \
+                      f'Max is {max_day}.' \
+                      f'Requested day is {day_value}'
+            super().__init__(message)
+
     def __init__(self, max_day):
         self.max_day = max_day
-        pass
 
     def get_day(self, day_value):
         if day_value > self.max_day:
-            raise Exception(f'Problem not posted yet. '
-                            f'Max is {self.max_day}.'
-                            f'Requested day is {day_value}')
+            raise DayFactory.DayChallengeException(day_value, self.max_day)
         print(f'Working on day {day_value}')
-        if day_value == 1:
-            return Day1()
-        elif day_value == 2:
-            return Day2()
-        elif day_value == 3:
-            return Day3()
-        elif day_value == 4:
-            return Day4()
-        elif day_value == 5:
-            return Day5()
-        else:
-            raise Exception("Unknown day value: "+ day_value)
+        day_name = "Day%d" % day_value
+        day_class = getattr(importlib.import_module(day_name), day_name)
+        return day_class()
 
