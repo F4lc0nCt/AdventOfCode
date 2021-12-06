@@ -28,5 +28,11 @@ Day 5 - 1st star - Result Input Case is 7318
 Working on day 5
 Day 5 - 2nd star - Result Test Case is 12
 Day 5 - 2nd star - Result Input Case is 19939
+Working on day 6
+Day 6 - 1st star - Result Test Case is 5934
+Day 6 - 1st star - Result Input Case is 350605
+Working on day 6
+Day 6 - 2nd star - Result Test Case is 26984457539
+Day 6 - 2nd star - Result Input Case is 1592778185024
 
 Process finished with exit code 0
