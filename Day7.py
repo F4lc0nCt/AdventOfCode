@@ -35,8 +35,26 @@ class Day7(Day):
                 min_dist = current_dist
         return min_dist
 
+    def find_crab_center_median_linear_consumption(self, crab_position_string):
+        crab_position = self.get_crab_position(crab_position_string)
+        crab_position.sort()
+        if len(crab_position) % 2 == 0:
+            median = (crab_position[len(crab_position)//2-1] + crab_position[len(crab_position)//2])//2
+            median_rounded = median+1
+        else:
+            median = median_rounded = crab_position[len(crab_position)//2-1]
+        dist_median = dist_median_rounded = 0
+        for position in crab_position:
+            dist_median += self.consume_linear_fuel(position, median)
+            dist_median_rounded += self.consume_linear_fuel(position, median_rounded)
+        return min(dist_median, dist_median_rounded)
+
     def solution_first_star(self, input_value):
-        return self.find_crab_center(input_value, self.consume_linear_fuel)
+        """
+        Other solution
+        return res = self.find_crab_center(input_value, self.consume_linear_fuel)
+        """
+        return self.find_crab_center_median_linear_consumption(input_value)
 
     def solution_second_star(self, input_value):
         return self.find_crab_center(input_value, self.consume_incremental_fuel)
