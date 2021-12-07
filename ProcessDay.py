@@ -1,8 +1,8 @@
 
 from DayFactory import DayFactory
 
-NB_DAY = 6
-LAST_DAY = False
+NB_DAY = 7
+LAST_DAY = True
 SECOND_STAR = True
 
 
