@@ -58,7 +58,12 @@ Day 10 - 1st star - Result Input Case is 436497
 Working on day 10
 Day 10 - 2nd star - Result Test Case is 288957
 Day 10 - 2nd star - Result Input Case is 2377613374
-
+Working on day 11
+Day 11 - 1st star - Result Test Case is 1656
+Day 11 - 1st star - Result Input Case is 1655
+Working on day 11
+Day 11 - 2nd star - Result Test Case is 195
+Day 11 - 2nd star - Result Input Case is 337
 
 
 Process finished with exit code 0
