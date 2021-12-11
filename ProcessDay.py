@@ -4,7 +4,7 @@ from DayFactory import DayFactory
 
 
 NB_MAX_DAY = 25
-LAST_DAY = True
+LAST_DAY = False
 SECOND_STAR = True
 
 """ Get the number of Day implemented"""
