@@ -52,6 +52,13 @@ Day 9 - 1st star - Result Input Case is 566
 Working on day 9
 Day 9 - 2nd star - Result Test Case is 1134
 Day 9 - 2nd star - Result Input Case is 891684
+Working on day 10
+Day 10 - 1st star - Result Test Case is 26397
+Day 10 - 1st star - Result Input Case is 436497
+Working on day 10
+Day 10 - 2nd star - Result Test Case is 288957
+Day 10 - 2nd star - Result Input Case is 2377613374
+
 
 
 Process finished with exit code 0
