@@ -18,7 +18,6 @@ class DayFactory:
     def get_day(self, day_value):
         if day_value > self.max_day:
             raise DayFactory.DayChallengeException(day_value, self.max_day)
-        print(f'Working on day {day_value}')
         day_name = "Day%d" % day_value
         day_class = getattr(importlib.import_module(day_name), day_name)
         return day_class()

@@ -1,75 +1,63 @@
-Working on day 1
-Day 1 - 1st star - Result Test Case is 7
-Day 1 - 1st star - Result Input Case is 1722
-Working on day 1
-Day 1 - 2nd star - Result Test Case is 5
-Day 1 - 2nd star - Result Input Case is 1748
-Working on day 2
-Day 2 - 1st star - Result Test Case is 150
-Day 2 - 1st star - Result Input Case is 1959318
-Working on day 2
-Day 2 - 2nd star - Result Test Case is 900
-Day 2 - 2nd star - Result Input Case is 2035343802
-Working on day 3
-Day 3 - 1st star - Result Test Case is 198
-Day 3 - 1st star - Result Input Case is 3374136
-Working on day 3
-Day 3 - 2nd star - Result Test Case is 230
-Day 3 - 2nd star - Result Input Case is 4432698
-Working on day 4
-Day 4 - 1st star - Result Test Case is 4512
-Day 4 - 1st star - Result Input Case is 58412
-Working on day 4
-Day 4 - 2nd star - Result Test Case is 1924
-Day 4 - 2nd star - Result Input Case is 10030
-Working on day 5
-Day 5 - 1st star - Result Test Case is 5
-Day 5 - 1st star - Result Input Case is 7318
-Working on day 5
-Day 5 - 2nd star - Result Test Case is 12
-Day 5 - 2nd star - Result Input Case is 19939
-Working on day 6
-Day 6 - 1st star - Result Test Case is 5934
-Day 6 - 1st star - Result Input Case is 350605
-Working on day 6
-Day 6 - 2nd star - Result Test Case is 26984457539
-Day 6 - 2nd star - Result Input Case is 1592778185024
-Working on day 7
-Day 7 - 1st star - Result Test Case is 37
-Day 7 - 1st star - Result Input Case is 325528
-Working on day 7
-Day 7 - 2nd star - Result Test Case is 168
-Day 7 - 2nd star - Result Input Case is 85015836
-Working on day 8
-Day 8 - 1st star - Result Test Case is 26
-Day 8 - 1st star - Result Input Case is 473
-Working on day 8
-Day 8 - 2nd star - Result Test Case is 61229
-Day 8 - 2nd star - Result Input Case is 1097568
-Working on day 9
-Day 9 - 1st star - Result Test Case is 15
-Day 9 - 1st star - Result Input Case is 566
-Working on day 9
-Day 9 - 2nd star - Result Test Case is 1134
-Day 9 - 2nd star - Result Input Case is 891684
-Working on day 10
-Day 10 - 1st star - Result Test Case is 26397
-Day 10 - 1st star - Result Input Case is 436497
-Working on day 10
-Day 10 - 2nd star - Result Test Case is 288957
-Day 10 - 2nd star - Result Input Case is 2377613374
-Working on day 11
-Day 11 - 1st star - Result Test Case is 1656
-Day 11 - 1st star - Result Input Case is 1655
-Working on day 11
-Day 11 - 2nd star - Result Test Case is 195
-Day 11 - 2nd star - Result Input Case is 337
-Working on day 12
-Day 12 - 1st star - Result Test Case is 10
-Day 12 - 1st star - Result Input Case is 4011
-Working on day 12
-Day 12 - 2nd star - Result Test Case is 36
-Day 12 - 2nd star - Result Input Case is 108035
+Day		Star	Test Type	          Result	|	Elapsed Time
+----------------------------------------------------------------------
+  1		1st		Example		               7	|	     0ms
+  1		1st		Problem		            1722	|	     7ms
+  1		2nd		Example		               5	|	     2ms
+  1		2nd		Problem		            1748	|	     7ms
+----------------------------------------------------------------------
+  2		1st		Example		             150	|	     0ms
+  2		1st		Problem		         1924923	|	    10ms
+  2		2nd		Example		             900	|	     1ms
+  2		2nd		Problem		      1982495697	|	    13ms
+----------------------------------------------------------------------
+  3		1st		Example		             198	|	     0ms
+  3		1st		Problem		         3374136	|	    13ms
+  3		2nd		Example		             230	|	     0ms
+  3		2nd		Problem		         4432698	|	     5ms
+----------------------------------------------------------------------
+  4		1st		Example		            4512	|	     0ms
+  4		1st		Problem		           58412	|	    25ms
+  4		2nd		Example		            1924	|	     0ms
+  4		2nd		Problem		           10030	|	    47ms
+----------------------------------------------------------------------
+  5		1st		Example		               5	|	     0ms
+  5		1st		Problem		            7318	|	   144ms
+  5		2nd		Example		              12	|	     1ms
+  5		2nd		Problem		           19939	|	   244ms
+----------------------------------------------------------------------
+  6		1st		Example		            5934	|	    25ms
+  6		1st		Problem		          350605	|	  1599ms
+  6		2nd		Example		     26984457539	|	     1ms
+  6		2nd		Problem		   1592778185024	|	     2ms
+----------------------------------------------------------------------
+  7		1st		Example		              37	|	     0ms
+  7		1st		Problem		          325528	|	     1ms
+  7		2nd		Example		             168	|	     0ms
+  7		2nd		Problem		        85015836	|	  1551ms
+----------------------------------------------------------------------
+  8		1st		Example		              26	|	     0ms
+  8		1st		Problem		             473	|	     0ms
+  8		2nd		Example		           61229	|	     0ms
+  8		2nd		Problem		         1097568	|	     7ms
+----------------------------------------------------------------------
+  9		1st		Example		              15	|	     0ms
+  9		1st		Problem		             566	|	     9ms
+  9		2nd		Example		            1134	|	     0ms
+  9		2nd		Problem		          891684	|	    33ms
+----------------------------------------------------------------------
+ 10		1st		Example		           26397	|	     0ms
+ 10		1st		Problem		          436497	|	     4ms
+ 10		2nd		Example		          288957	|	     0ms
+ 10		2nd		Problem		      2377613374	|	     5ms
+----------------------------------------------------------------------
+ 11		1st		Example		            1656	|	    27ms
+ 11		1st		Problem		            1655	|	    34ms
+ 11		2nd		Example		             195	|	    50ms
+ 11		2nd		Problem		             337	|	    80ms
+----------------------------------------------------------------------
+ 12		1st		Example		              10	|	     0ms
+ 12		1st		Problem		            4011	|	    87ms
+ 12		2nd		Example		              36	|	     0ms
+ 12		2nd		Problem		          108035	|	  2467ms
+----------------------------------------------------------------------
 
-
-Process finished with exit code 0

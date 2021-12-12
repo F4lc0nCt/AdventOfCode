@@ -4,7 +4,7 @@ from DayFactory import DayFactory
 
 
 NB_MAX_DAY = 25
-LAST_DAY = True
+LAST_DAY = False
 SECOND_STAR = True
 
 """ Get the number of Day implemented"""
@@ -16,6 +16,13 @@ for d in range(1, NB_MAX_DAY):
     except ModuleNotFoundError:
         break
 
+# Print Header
+result_title = "Result"
+time_title = "Elapsed Time"
+print(f'Day\t\tStar\tTest Type\t{result_title:>16}\t|\t{time_title:>6}')
+separator = '-'*70
+
+
 dayFactory = DayFactory(nb_day)
 if LAST_DAY:
     day = dayFactory.get_day(nb_day)
@@ -25,8 +32,10 @@ if LAST_DAY:
         day.process_second_star()
 else:
     for i in range(1, nb_day+1):
+        print(separator)
         day = dayFactory.get_day(i)
         day.process_first_star()
         if SECOND_STAR:
             day = dayFactory.get_day(i)
             day.process_second_star()
+    print(separator)

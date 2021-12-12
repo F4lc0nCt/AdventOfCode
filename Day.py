@@ -1,6 +1,7 @@
 
 from enum import Enum
 from abc import ABC, abstractmethod
+import time
 from InputParser import InputParser
 
 
@@ -51,9 +52,14 @@ class Day(ABC):
             raise Day.UnknownStarException(star)
 
     def process_star(self, star):
+        start_test_time = time.time()
         test_case = InputParser(self.day_value, Day.TestEnum.TEST.value).get_iterator()
         test_result = self.solution_star(star, test_case)
-        print(f'Day {self.day_value} - {star} star - Result Test Case is {test_result}')
+        end_test_time = int((time.time() - start_test_time)*1000)
+        print(f'{self.day_value:>3}\t\t{star}\t\tExample\t\t{test_result:>16}\t|\t{end_test_time:>6}ms')
+        start_input_time = time.time()
         input_case = InputParser(self.day_value, Day.TestEnum.INPUT.value).get_iterator()
         input_result = self.solution_star(star, input_case)
-        print(f'Day {self.day_value} - {star} star - Result Input Case is {input_result}')
+        end_input_time = int((time.time() - start_input_time)*1000)
+        print(f'{self.day_value:>3}\t\t{star}\t\tProblem\t\t{input_result:>16}\t|\t{end_input_time:>6}ms')
+
