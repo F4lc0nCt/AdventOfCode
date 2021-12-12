@@ -48,7 +48,6 @@ class Day9(Day):
             self.delimit_basin(i+1, j)
         if j < len(self.data[i])-1 and self.data[i][j+1] > point and self.data[i][j+1] != 9:
             self.delimit_basin(i, j+1)
-        return
 
     def find_basins(self, input_data):
         self.extract_data(input_data)
