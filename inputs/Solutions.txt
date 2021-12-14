@@ -60,4 +60,9 @@ Day		Star	Test Type	          Result	|	Elapsed Time
  12		2nd		Example		              36	|	     0ms
  12		2nd		Problem		          108035	|	  2467ms
 ----------------------------------------------------------------------
+ 13		1st		Example		              17	|	     1ms
+ 13		1st		Problem		             592	|	     6ms
+ 13		2nd		Example		              16	|	     2ms
+ 13		2nd		Problem		              94	|	    85ms
+ ----------------------------------------------------------------------
 
