@@ -80,3 +80,9 @@ Day		Star	Test Type	          Result	|	Elapsed Time
  16		2nd		Example		               1	|	     2ms
  16		2nd		Problem		    402817863665	|	    53ms
 ----------------------------------------------------------------------
+Day		Star	Test Type	          Result	|	Elapsed Time
+ 17		1st		Example		              45	|	  3403ms
+ 17		1st		Problem		            7626	|	  5660ms
+ 17		2nd		Example		             112	|	  3132ms
+ 17		2nd		Problem		            2032	|	  7339ms
+----------------------------------------------------------------------
