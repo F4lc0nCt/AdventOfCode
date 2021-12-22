@@ -8,7 +8,7 @@ LAST_DAY = True
 SECOND_STAR = True
 
 """ Get the number of Day implemented"""
-for d in range(1, NB_MAX_DAY):
+for d in range(1, NB_MAX_DAY+1):
     day_name = "Day%d" % d
     try:
         getattr(importlib.import_module(day_name), day_name)
